@@ -218,6 +218,9 @@ const DAY_WORKOUT_POSTERS: Record<string, string> = {
   Sunday: '/src/assets/images/workout_sunday_1784033492719.jpg'
 };
 
+const BACKEND_DEPLOY_URL = 'https://pulsefit-oqal.onrender.com';
+const FRONTEND_DEPLOY_URL = 'https://pulsefit-nu-two.vercel.app';
+
 const PIXAR_GIRL_THUMBSUP = '/src/assets/images/pixar_girl_thumbsup_1784034638644.jpg';
 const PIXAR_GIRL_DANCING = '/src/assets/images/pixar_girl_dancing_1784034650617.jpg';
 
@@ -1107,6 +1110,28 @@ export default function App() {
                 </div>
                 <p className="text-xs text-slate-500">{profile.tier}</p>
               </div>
+            </div>
+          </div>
+
+          <div className="mt-4 p-4 rounded-2xl border border-white/10 bg-slate-950/60 text-sm">
+            <p className="text-xs uppercase tracking-[0.2em] text-slate-500 mb-2">Deploy links</p>
+            <div className="space-y-2 text-xs">
+              <a
+                href={FRONTEND_DEPLOY_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="block text-sky-300 hover:text-white transition-colors"
+              >
+                Frontend: pulsefit-nu-two.vercel.app
+              </a>
+              <a
+                href={BACKEND_DEPLOY_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="block text-emerald-300 hover:text-white transition-colors"
+              >
+                Backend: pulsefit-oqal.onrender.com
+              </a>
             </div>
           </div>
         </div>
