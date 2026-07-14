@@ -1,0 +1,6 @@
+{
+  "name": "PulseFit",
+  "description": "An elegant, interactive dark fitness and nutrition tracking dashboard with daily targets, food logs, and workout routines.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
